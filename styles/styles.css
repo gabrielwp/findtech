@@ -1,0 +1,111 @@
+body {
+  background-color: #cfcfcf;
+}
+
+.navbar {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header {
+  background-image: url(../assets/background-maps.png);
+  background-size: 100%;
+  background-position: 50%;
+  height: 300px;
+}
+
+.content {
+  background-color: rgba(52, 58, 64, 0.85);
+  height: 100%;
+}
+
+.img-column {
+  width: 170px;
+  padding: 16px;
+  margin-left: 38px;
+}
+
+.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+
+#map {
+  height: 400px;
+  margin: 60px;
+  border-radius: 5px;
+  width: auto;
+}
+
+input {
+  width: 100%;
+}
+
+.search-input {
+  width: 200px;
+}
+
+#favorite {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  border: 2px solid rgba(0,0,0,0.2);
+  border-radius: 4px;
+  background-color: white;
+  z-index: 500 !important;
+}
+
+#legend {
+  position: absolute;
+  display: flex;
+  bottom: 10px;
+  left: 10px;
+  padding: 5px;
+  border: 2px solid rgba(0,0,0,0.2);
+  border-radius: 4px;
+  background-color: white;
+  z-index: 2000 !important;
+}
+
+#legend div {
+  margin-left: 10px;
+  color: white;
+  padding: 0 4px;
+}
+
+.blue {
+  background-color: #2A81CB	;
+}
+
+.green {
+  background-color: #2AAD27;
+}
+
+.violet {
+  background-color: #9C2BCB;
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (max-width: 576px) {
+
+
+  #map {
+    margin: 40px;
+    width: auto;
+    height: 400px;
+  }
+
+  #legend {
+    display: none;
+  }
+}
